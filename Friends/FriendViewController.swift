@@ -13,25 +13,20 @@ final class FriendViewController: UIViewController {
     @IBOutlet weak var textFieldFirstname: UITextField! {
         didSet {
             textFieldFirstname.delegate = self
-            textFieldFirstname.addTarget(self, action:
-                #selector(firstnameTextFieldDidChange),
-                                         for: .editingChanged)
+            textFieldFirstname.addTarget(self, action: #selector(firstnameTextFieldDidChange), for: .editingChanged)
         }
     }
     @IBOutlet weak var textFieldLastname: UITextField! {
         didSet {
             textFieldLastname.delegate = self
-            textFieldLastname.addTarget(self, action:
-                #selector(lastnameTextFieldDidChange),
-                                         for: .editingChanged)
+            textFieldLastname.addTarget(self, action: #selector(lastnameTextFieldDidChange), for: .editingChanged)
         }
     }
     @IBOutlet weak var textFieldPhoneNumber: UITextField! {
         didSet {
             textFieldPhoneNumber.delegate = self
             textFieldPhoneNumber.addTarget(self, action:
-                #selector(phoneNumberTextFieldDidChange),
-                                        for: .editingChanged)
+                #selector(phoneNumberTextFieldDidChange), for: .editingChanged)
         }
     }
 

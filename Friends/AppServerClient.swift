@@ -99,7 +99,6 @@ class AppServerClient {
                             completion(.failure(nil))
                             return
                         }
-
                         let friend = try JSONDecoder().decode(Friend.self, from: data)
                         completion(.success(payload: friend))
                     } catch {
@@ -140,5 +139,4 @@ class AppServerClient {
                 }
         }
     }
-
 }
